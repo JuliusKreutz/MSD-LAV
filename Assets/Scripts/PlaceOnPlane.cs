@@ -20,11 +20,6 @@ public class PlaceOnPlane : MonoBehaviour
     private void Start()
     {
         arOrigin = FindObjectOfType<ARSessionOrigin>();
-        if (arOrigin == null)
-        {
-            Debug.Log("Null");
-        }
-
         arRaycast = arOrigin.GetComponent<ARRaycastManager>();
     }
 
@@ -62,8 +57,6 @@ public class PlaceOnPlane : MonoBehaviour
         placementPoseIsValid = hits.Count > 0;
         if (!placementPoseIsValid) return;
         placementPose = hits[0].pose;
-
-        Debug.Log("Found pose");
 
         var cameraForward = Camera.current.transform.forward;
         var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
