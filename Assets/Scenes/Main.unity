@@ -155,7 +155,7 @@ MonoBehaviour:
   ReferenceDpi: 200
   GuiLayers:
     serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 0
   RecordFingers: 1
   RecordThreshold: 5
   RecordLimit: 10
@@ -464,8 +464,6 @@ GameObject:
   - component: {fileID: 513618857}
   - component: {fileID: 513618858}
   - component: {fileID: 513618859}
-  - component: {fileID: 513618861}
-  - component: {fileID: 513618860}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -527,7 +525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ReferenceLibrary: {fileID: 11400000, guid: 6d01222c11442cc4d9917273d587fc07, type: 2}
   m_MaxNumberOfMovingImages: 0
-  m_TrackedImagePrefab: {fileID: 5127383023599293268, guid: f6d1b7cb70cb74641849ea2b557f326b,
+  m_TrackedImagePrefab: {fileID: 1923431394312567073, guid: f6d1b7cb70cb74641849ea2b557f326b,
     type: 3}
 --- !u!114 &513618859
 MonoBehaviour:
@@ -541,48 +539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf9854a116a00d1489e753bc1e1af07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &513618860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513618854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc7c91b26689a054d88448aba6dfe424, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Use:
-    Filter: 0
-    IgnoreStartedOverGui: 1
-    RequiredFingerCount: 0
-    RequiredMouseButtons: 0
-    RequiredSelectable: {fileID: 0}
-  Axis: {x: 0, y: -1, z: 0}
-  Space: 1
---- !u!114 &513618861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513618854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c73c1ab94e28d244827af556dca1ed2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Use:
-    Filter: 0
-    IgnoreStartedOverGui: 1
-    RequiredFingerCount: 0
-    RequiredMouseButtons: 0
-    RequiredSelectable: {fileID: 0}
-  Camera: {fileID: 0}
-  Relative: 0
-  Dampening: -1
-  remainingScale: {x: 0, y: 0, z: 0}
 --- !u!1 &536609660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,7 +1400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Device: 0
-  m_PoseSource: 6
+  m_PoseSource: 2
   m_PoseProviderComponent: {fileID: 0}
   m_TrackingType: 0
   m_UpdateType: 0
@@ -2557,7 +2513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placementIndicator: {fileID: 319172658}
-  objectToPlace: {fileID: 5127383023599293268, guid: f6d1b7cb70cb74641849ea2b557f326b,
+  objectToPlace: {fileID: 1923431394312567073, guid: f6d1b7cb70cb74641849ea2b557f326b,
     type: 3}
 --- !u!4 &1984675051
 Transform:
