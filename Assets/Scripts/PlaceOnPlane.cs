@@ -23,6 +23,14 @@ public class PlaceOnPlane : MonoBehaviour
         arRaycast = arOrigin.GetComponent<ARRaycastManager>();
     }
 
+    public void DestroyCurrent()
+    {
+        if (current == null) return;
+        
+        Destroy(current);
+        current = null;
+    }
+
     private void Update()
     {
         UpdatePlacementPose();
