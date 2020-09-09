@@ -86,7 +86,7 @@ namespace Lean.Touch
 					}
 				}
 
-				transform.localScale /= pinchScale;
+				transform.localScale *= pinchScale;
 
 				remainingScale += transform.localPosition - oldScale;
 			}
