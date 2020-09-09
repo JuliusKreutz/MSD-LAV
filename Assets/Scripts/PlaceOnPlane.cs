@@ -23,9 +23,8 @@ public class PlaceOnPlane : MonoBehaviour
         arRaycast = arOrigin.GetComponent<ARRaycastManager>();
     }
 
-    public void reset()
+    public void Reset()
     {
-        
         placementIndicator.SetActive(false);
         
         if (current == null) return;

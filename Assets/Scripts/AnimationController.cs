@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class AnimationController : MonoBehaviour
@@ -9,7 +10,14 @@ public class AnimationController : MonoBehaviour
 
     private int max = 11;
 
-    public void next()
+    public void Reset()
+    {
+        counter = 0;
+        text.text = "0";
+        text.enabled = false;
+    }
+
+    public void Next()
     {
         Animator animator = FindObjectOfType<Animator>();
 
@@ -24,7 +32,7 @@ public class AnimationController : MonoBehaviour
         text.text = "" + counter;
     }
 
-    public void prev()
+    public void Prev()
     {
         Animator animator = FindObjectOfType<Animator>();
 
