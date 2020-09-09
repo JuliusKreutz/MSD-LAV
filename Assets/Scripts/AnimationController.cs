@@ -8,7 +8,7 @@ public class AnimationController : MonoBehaviour
 
     [SerializeField] private Text text;
 
-    private int max = 11;
+    private int max = 10;
 
     public void Reset()
     {
